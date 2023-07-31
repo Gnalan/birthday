@@ -1,0 +1,765 @@
+<html __fvdsurfcanyoninserted="1" class=" clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone clickberry-extension clickberry-extension-standalone"><head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday</title>
+    <style>
+        /* If you can't see it just hit space in here*/
+        body {
+            font-family:'Wendy One', sans-serif;
+        }
+        
+        body {
+background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #374566), color-stop(100%, #010203));
+background-image: -webkit-radial-gradient(#374566, #010203);
+background-image: -moz-radial-gradient(#374566, #010203);
+background-image: -o-radial-gradient(#374566, #010203);
+background-image: radial-gradient(#374566, #010203);
+}
+        span {
+            text-transform: uppercase;
+        }
+        .container {
+            width: 800px;
+            /* height: 420px;
+            padding-top: 200px;
+            margin: 0 auto; */
+            /* position: relative; */
+        }
+        .balloon {
+            width: 738px;
+            margin: 0 auto;
+            padding-top: 30px;
+            position: relative;
+        }
+        .balloon > div {
+            width: 104px;
+            height: 140px;
+            background: rgba(182, 15, 97, 0.9);
+            border-radius: 0;
+            border-radius: 80% 80% 80% 80%;
+            margin: 0 auto;
+            position: absolute;
+            padding: 10px;
+            box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
+            -webkit-transform-origin: bottom center;
+        }
+        .balloon > div:nth-child(1) {
+            background: rgba(182, 15, 97, 0.9);
+            left: 0;
+            box-shadow: inset 10px 10px 10px rgba(135, 11, 72, 0.9);
+            -webkit-animation: balloon1 6s ease-in-out infinite;
+            -moz-animation: balloon1 6s ease-in-out infinite;
+            -o-animation: balloon1 6s ease-in-out infinite;
+            animation: balloon1 6s ease-in-out infinite;
+        }
+        .balloon > div:nth-child(1):before {
+            color: rgba(182, 15, 97, 0.9);
+        }
+        .balloon > div:nth-child(2) {
+            background: rgba(242, 112, 45, 0.9);
+            left: 120px;
+            box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
+            -webkit-animation: balloon2 6s ease-in-out infinite;
+            -moz-animation: balloon2 6s ease-in-out infinite;
+            -o-animation: balloon2 6s ease-in-out infinite;
+            animation: balloon2 6s ease-in-out infinite;
+        }
+        .balloon > div:nth-child(2):before {
+            color: rgba(242, 112, 45, 0.9);
+        }
+        .balloon > div:nth-child(3) {
+            background: rgba(45, 181, 167, 0.9);
+            left: 240px;
+            box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
+            -webkit-animation: balloon4 6s ease-in-out infinite;
+            -moz-animation: balloon4 6s ease-in-out infinite;
+            -o-animation: balloon4 6s ease-in-out infinite;
+            animation: balloon4 6s ease-in-out infinite;
+        }
+        .balloon > div:nth-child(3):before {
+            color: rgba(45, 181, 167, 0.9);
+        }
+        .balloon > div:nth-child(4) {
+            background: rgba(190, 61, 244, 0.9);
+            left: 360px;
+            box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
+            -webkit-animation: balloon1 5s ease-in-out infinite;
+            -moz-animation: balloon1 5s ease-in-out infinite;
+            -o-animation: balloon1 5s ease-in-out infinite;
+            animation: balloon1 5s ease-in-out infinite;
+        }
+        .balloon > div:nth-child(4):before {
+            color: rgba(190, 61, 244, 0.9);
+        }
+        .balloon > div:nth-child(5) {
+            background: rgba(180, 224, 67, 0.9);
+            left: 480px;
+            box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
+            -webkit-animation: balloon3 5s ease-in-out infinite;
+            -moz-animation: balloon3 5s ease-in-out infinite;
+            -o-animation: balloon3 5s ease-in-out infinite;
+            animation: balloon3 5s ease-in-out infinite;
+        }
+        .balloon > div:nth-child(5):before {
+            color: rgba(180, 224, 67, 0.9);
+        }
+        .balloon > div:nth-child(6) {
+            background: rgba(242, 194, 58, 0.9);
+            left: 600px;
+            box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
+            -webkit-animation: balloon2 3s ease-in-out infinite;
+            -moz-animation: balloon2 3s ease-in-out infinite;
+            -o-animation: balloon2 3s ease-in-out infinite;
+            animation: balloon2 3s ease-in-out infinite;
+        }
+        .balloon > div:nth-child(6):before {
+            color: rgba(242, 194, 58, 0.9);
+        }
+        .balloon > div:before {
+            color: rgba(182, 15, 97, 0.9);
+            position: absolute;
+            bottom: -11px;
+            left: 52px;
+            content:"▲";
+            font-size: 1em;
+        }
+        span {
+            font-size: 4.8em;
+            color: white;
+            position: relative;
+            top: 30px;
+            left: 50%;
+            margin-left: -27px;
+        }
+        /*BALLOON 1 4*/
+        @-webkit-keyframes balloon1 {
+            0%, 100% {
+                -webkit-transform: translateY(0) rotate(-6deg);
+            }
+            50% {
+                -webkit-transform: translateY(-20px) rotate(8deg);
+            }
+        }
+        @-moz-keyframes balloon1 {
+            0%, 100% {
+                -moz-transform: translateY(0) rotate(-6deg);
+            }
+            50% {
+                -moz-transform: translateY(-20px) rotate(8deg);
+            }
+        }
+        @-o-keyframes balloon1 {
+            0%, 100% {
+                -o-transform: translateY(0) rotate(-6deg);
+            }
+            50% {
+                -o-transform: translateY(-20px) rotate(8deg);
+            }
+        }
+        @keyframes balloon1 {
+            0%, 100% {
+                transform: translateY(0) rotate(-6deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(8deg);
+            }
+        }
+        /* BAllOON 2 5*/
+        @-webkit-keyframes balloon2 {
+            0%, 100% {
+                -webkit-transform: translateY(0) rotate(6eg);
+            }
+            50% {
+                -webkit-transform: translateY(-30px) rotate(-8deg);
+            }
+        }
+        @-moz-keyframes balloon2 {
+            0%, 100% {
+                -moz-transform: translateY(0) rotate(6deg);
+            }
+            50% {
+                -moz-transform: translateY(-30px) rotate(-8deg);
+            }
+        }
+        @-o-keyframes balloon2 {
+            0%, 100% {
+                -o-transform: translateY(0) rotate(6deg);
+            }
+            50% {
+                -o-transform: translateY(-30px) rotate(-8deg);
+            }
+        }
+        @keyframes balloon2 {
+            0%, 100% {
+                transform: translateY(0) rotate(6deg);
+            }
+            50% {
+                transform: translateY(-30px) rotate(-8deg);
+            }
+        }
+        /* BAllOON 0*/
+        @-webkit-keyframes balloon3 {
+            0%, 100% {
+                -webkit-transform: translate(0, -10px) rotate(6eg);
+            }
+            50% {
+                -webkit-transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+        @-moz-keyframes balloon3 {
+            0%, 100% {
+                -moz-transform: translate(0, -10px) rotate(6eg);
+            }
+            50% {
+                -moz-transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+        @-o-keyframes balloon3 {
+            0%, 100% {
+                -o-transform: translate(0, -10px) rotate(6eg);
+            }
+            50% {
+                -o-transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+        @keyframes balloon3 {
+            0%, 100% {
+                transform: translate(0, -10px) rotate(6eg);
+            }
+            50% {
+                transform: translate(-20px, 30px) rotate(-8deg);
+            }
+        }
+        /* BAllOON 3*/
+        @-webkit-keyframes balloon4 {
+            0%, 100% {
+                -webkit-transform: translate(10px, -10px) rotate(-8eg);
+            }
+            50% {
+                -webkit-transform: translate(-15px, 20px) rotate(10deg);
+            }
+        }
+        @-moz-keyframes balloon4 {
+            0%, 100% {
+                -moz-transform: translate(10px, -10px) rotate(-8eg);
+            }
+            50% {
+                -moz-transform: translate(-15px, 10px) rotate(10deg);
+            }
+        }
+        @-o-keyframes balloon4 {
+            0%, 100% {
+                -o-transform: translate(10px, -10px) rotate(-8eg);
+            }
+            50% {
+                -o-transform: translate(-15px, 10px) rotate(10deg);
+            }
+        }
+        @keyframes balloon4 {
+            0%, 100% {
+                transform: translate(10px, -10px) rotate(-8eg);
+            }
+            50% {
+                transform: translate(-15px, 10px) rotate(10deg);
+            }
+        }
+        h1 {
+            position: relative;
+            top: 200px;
+            text-align: center;
+            color:rgba(254, 252, 255, 0.9);
+            font-size: 2.8em;
+        }
+
+
+        canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+    z-index: -1;
+}
+.intro{
+	margin: 0 0;
+	position: absolute;
+	font: 16px Verdana;
+	color: #eee;
+	height: 25px;
+	top: calc( 100vh - 30px );
+	text-shadow: 0 0 2px white;
+}
+.intro a {
+	text-decoration: none;
+	color: #aaa;
+}
+.next {
+	font-size: 11px;
+}
+.intro > a:first-of-type {
+	font-size: 20px;
+}
+
+body {
+	overflow: hidden;
+}
+    </style>
+    <script>
+        window.open = function() {};
+        window.print = function() {};
+        // Support hover state for mobile.
+        if (false) {
+            window.ontouchstart = function() {};
+        }
+    </script>
+    <script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script>
+    <meta content="clickberry-extension-here">
+    <meta content="clickberry-extension-here">
+    <style type="text/css"></style>
+    <style type="text/css"></style>
+<style type="text/css"></style><style type="text/css"></style><script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script><meta content="clickberry-extension-here"></head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Wendy+One" rel="stylesheet" type="text/css">
+    <div>
+    <div class="container" style="width: 100%;justify-content: center;align-items: center;" >
+        <div class="balloon">
+            <div><span>☺</span>
+            </div>
+            <div><span>B</span>
+            </div>
+            <div><span>D</span>
+            </div>
+            <div><span>A</span>
+            </div>
+            <div><span>Y</span>
+            </div>
+            <div><span>!</span>
+            </div>
+        </div>
+        
+         
+
+    </div>
+<div style="width: 100%;height: 100%;">
+    <canvas id=c></canvas>
+    <div style="text-align: justify;position: absolute;z-index: -1;margin-left: 200px;margin-top: 200px;">
+        <h1>Mesmerizing day of the world</h1>
+    </div>    
+</div>
+</div>
+
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" ></script>
+    <script>
+        
+    </script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage('resize', "*");
+        }
+
+
+
+        var w = c.width = window.innerWidth,
+		h = c.height = window.innerHeight,
+		ctx = c.getContext( '2d' ),
+		
+		hw = w / 2, // half-width
+		hh = h / 2,
+		
+		opts = {
+			strings: [ 'HAPPY', 'BIRTHDAY!','ANGEL MUTHUMARI' ],
+			charSize: 30,
+			charSpacing: 35,
+			lineHeight: 40,
+			
+			cx: w / 2,
+			cy: h / 2,
+			
+			fireworkPrevPoints: 10,
+			fireworkBaseLineWidth: 5,
+			fireworkAddedLineWidth: 8,
+			fireworkSpawnTime: 200,
+			fireworkBaseReachTime: 30,
+			fireworkAddedReachTime: 30,
+			fireworkCircleBaseSize: 20,
+			fireworkCircleAddedSize: 10,
+			fireworkCircleBaseTime: 30,
+			fireworkCircleAddedTime: 30,
+			fireworkCircleFadeBaseTime: 10,
+			fireworkCircleFadeAddedTime: 5,
+			fireworkBaseShards: 5,
+			fireworkAddedShards: 5,
+			fireworkShardPrevPoints: 3,
+			fireworkShardBaseVel: 4,
+			fireworkShardAddedVel: 2,
+			fireworkShardBaseSize: 3,
+			fireworkShardAddedSize: 3,
+			gravity: .1,
+			upFlow: -.1,
+			letterContemplatingWaitTime: 360,
+			balloonSpawnTime: 20,
+			balloonBaseInflateTime: 10,
+			balloonAddedInflateTime: 10,
+			balloonBaseSize: 20,
+			balloonAddedSize: 20,
+			balloonBaseVel: .4,
+			balloonAddedVel: .4,
+			balloonBaseRadian: -( Math.PI / 2 - .5 ),
+			balloonAddedRadian: -1,
+		},
+		calc = {
+			totalWidth: opts.charSpacing * Math.max( opts.strings[0].length, opts.strings[1].length )
+		},
+		
+		Tau = Math.PI * 2,
+		TauQuarter = Tau / 4,
+		
+		letters = [];
+
+ctx.font = opts.charSize + 'px Verdana';
+
+function Letter( char, x, y ){
+	this.char = char;
+	this.x = x;
+	this.y = y;
+	
+	this.dx = -ctx.measureText( char ).width / 2;
+	this.dy = +opts.charSize / 2;
+	
+	this.fireworkDy = this.y - hh;
+	
+	var hue = x / calc.totalWidth * 360;
+	
+	this.color = 'hsl(hue,80%,50%)'.replace( 'hue', hue );
+	this.lightAlphaColor = 'hsla(hue,80%,light%,alp)'.replace( 'hue', hue );
+	this.lightColor = 'hsl(hue,80%,light%)'.replace( 'hue', hue );
+	this.alphaColor = 'hsla(hue,80%,50%,alp)'.replace( 'hue', hue );
+	
+	this.reset();
+}
+Letter.prototype.reset = function(){
+	
+	this.phase = 'firework';
+	this.tick = 0;
+	this.spawned = false;
+	this.spawningTime = opts.fireworkSpawnTime * Math.random() |0;
+	this.reachTime = opts.fireworkBaseReachTime + opts.fireworkAddedReachTime * Math.random() |0;
+	this.lineWidth = opts.fireworkBaseLineWidth + opts.fireworkAddedLineWidth * Math.random();
+	this.prevPoints = [ [ 0, hh, 0 ] ];
+}
+Letter.prototype.step = function(){
+	
+	if( this.phase === 'firework' ){
+		
+		if( !this.spawned ){
+			
+			++this.tick;
+			if( this.tick >= this.spawningTime ){
+				
+				this.tick = 0;
+				this.spawned = true;
+			}
+			
+		} else {
+			
+			++this.tick;
+			
+			var linearProportion = this.tick / this.reachTime,
+					armonicProportion = Math.sin( linearProportion * TauQuarter ),
+					
+					x = linearProportion * this.x,
+					y = hh + armonicProportion * this.fireworkDy;
+			
+			if( this.prevPoints.length > opts.fireworkPrevPoints )
+				this.prevPoints.shift();
+			
+			this.prevPoints.push( [ x, y, linearProportion * this.lineWidth ] );
+			
+			var lineWidthProportion = 1 / ( this.prevPoints.length - 1 );
+			
+			for( var i = 1; i < this.prevPoints.length; ++i ){
+				
+				var point = this.prevPoints[ i ],
+						point2 = this.prevPoints[ i - 1 ];
+					
+				ctx.strokeStyle = this.alphaColor.replace( 'alp', i / this.prevPoints.length );
+				ctx.lineWidth = point[ 2 ] * lineWidthProportion * i;
+				ctx.beginPath();
+				ctx.moveTo( point[ 0 ], point[ 1 ] );
+				ctx.lineTo( point2[ 0 ], point2[ 1 ] );
+				ctx.stroke();
+			
+			}
+			
+			if( this.tick >= this.reachTime ){
+				
+				this.phase = 'contemplate';
+				
+				this.circleFinalSize = opts.fireworkCircleBaseSize + opts.fireworkCircleAddedSize * Math.random();
+				this.circleCompleteTime = opts.fireworkCircleBaseTime + opts.fireworkCircleAddedTime * Math.random() |0;
+				this.circleCreating = true;
+				this.circleFading = false;
+				
+				this.circleFadeTime = opts.fireworkCircleFadeBaseTime + opts.fireworkCircleFadeAddedTime * Math.random() |0;
+				this.tick = 0;
+				this.tick2 = 0;
+				
+				this.shards = [];
+				
+				var shardCount = opts.fireworkBaseShards + opts.fireworkAddedShards * Math.random() |0,
+						angle = Tau / shardCount,
+						cos = Math.cos( angle ),
+						sin = Math.sin( angle ),
+						
+						x = 1,
+						y = 0;
+				
+				for( var i = 0; i < shardCount; ++i ){
+					var x1 = x;
+					x = x * cos - y * sin;
+					y = y * cos + x1 * sin;
+					
+					this.shards.push( new Shard( this.x, this.y, x, y, this.alphaColor ) );
+				}
+			}
+			
+		}
+	} else if( this.phase === 'contemplate' ){
+		
+		++this.tick;
+		
+		if( this.circleCreating ){
+			
+			++this.tick2;
+			var proportion = this.tick2 / this.circleCompleteTime,
+					armonic = -Math.cos( proportion * Math.PI ) / 2 + .5;
+			
+			ctx.beginPath();
+			ctx.fillStyle = this.lightAlphaColor.replace( 'light', 50 + 50 * proportion ).replace( 'alp', proportion );
+			ctx.beginPath();
+			ctx.arc( this.x, this.y, armonic * this.circleFinalSize, 0, Tau );
+			ctx.fill();
+			
+			if( this.tick2 > this.circleCompleteTime ){
+				this.tick2 = 0;
+				this.circleCreating = false;
+				this.circleFading = true;
+			}
+		} else if( this.circleFading ){
+		
+			ctx.fillStyle = this.lightColor.replace( 'light', 70 );
+			ctx.fillText( this.char, this.x + this.dx, this.y + this.dy );
+			
+			++this.tick2;
+			var proportion = this.tick2 / this.circleFadeTime,
+					armonic = -Math.cos( proportion * Math.PI ) / 2 + .5;
+			
+			ctx.beginPath();
+			ctx.fillStyle = this.lightAlphaColor.replace( 'light', 100 ).replace( 'alp', 1 - armonic );
+			ctx.arc( this.x, this.y, this.circleFinalSize, 0, Tau );
+			ctx.fill();
+			
+			if( this.tick2 >= this.circleFadeTime )
+				this.circleFading = false;
+			
+		} else {
+			
+			ctx.fillStyle = this.lightColor.replace( 'light', 70 );
+			ctx.fillText( this.char, this.x + this.dx, this.y + this.dy );
+		}
+		
+		for( var i = 0; i < this.shards.length; ++i ){
+			
+			this.shards[ i ].step();
+			
+			if( !this.shards[ i ].alive ){
+				this.shards.splice( i, 1 );
+				--i;
+			}
+		}
+		
+		if( this.tick > opts.letterContemplatingWaitTime ){
+			
+			this.phase = 'balloon';
+			
+			this.tick = 0;
+			this.spawning = true;
+			this.spawnTime = opts.balloonSpawnTime * Math.random() |0;
+			this.inflating = false;
+			this.inflateTime = opts.balloonBaseInflateTime + opts.balloonAddedInflateTime * Math.random() |0;
+			this.size = opts.balloonBaseSize + opts.balloonAddedSize * Math.random() |0;
+			
+			var rad = opts.balloonBaseRadian + opts.balloonAddedRadian * Math.random(),
+					vel = opts.balloonBaseVel + opts.balloonAddedVel * Math.random();
+			
+			this.vx = Math.cos( rad ) * vel;
+			this.vy = Math.sin( rad ) * vel;
+		}
+	} else if( this.phase === 'balloon' ){
+			
+		ctx.strokeStyle = this.lightColor.replace( 'light', 80 );
+		
+		if( this.spawning ){
+			
+			++this.tick;
+			ctx.fillStyle = this.lightColor.replace( 'light', 70 );
+			ctx.fillText( this.char, this.x + this.dx, this.y + this.dy );
+			
+			if( this.tick >= this.spawnTime ){
+				this.tick = 0;
+				this.spawning = false;
+				this.inflating = true;	
+			}
+		} else if( this.inflating ){
+			
+			++this.tick;
+			
+			var proportion = this.tick / this.inflateTime,
+			    x = this.cx = this.x,
+					y = this.cy = this.y - this.size * proportion;
+			
+			ctx.fillStyle = this.alphaColor.replace( 'alp', proportion );
+			ctx.beginPath();
+			generateBalloonPath( x, y, this.size * proportion );
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.moveTo( x, y );
+			ctx.lineTo( x, this.y );
+			ctx.stroke();
+			
+			ctx.fillStyle = this.lightColor.replace( 'light', 70 );
+			ctx.fillText( this.char, this.x + this.dx, this.y + this.dy );
+			
+			if( this.tick >= this.inflateTime ){
+				this.tick = 0;
+				this.inflating = false;
+			}
+			
+		} else {
+			
+			this.cx += this.vx;
+			this.cy += this.vy += opts.upFlow;
+			
+			ctx.fillStyle = this.color;
+			ctx.beginPath();
+			generateBalloonPath( this.cx, this.cy, this.size );
+			ctx.fill();
+			
+			ctx.beginPath();
+			ctx.moveTo( this.cx, this.cy );
+			ctx.lineTo( this.cx, this.cy + this.size );
+			ctx.stroke();
+			
+			ctx.fillStyle = this.lightColor.replace( 'light', 70 );
+			ctx.fillText( this.char, this.cx + this.dx, this.cy + this.dy + this.size );
+			
+			if( this.cy + this.size < -hh || this.cx < -hw || this.cy > hw  )
+				this.phase = 'done';
+			
+		}
+	}
+}
+function Shard( x, y, vx, vy, color ){
+	
+	var vel = opts.fireworkShardBaseVel + opts.fireworkShardAddedVel * Math.random();
+	
+	this.vx = vx * vel;
+	this.vy = vy * vel;
+	
+	this.x = x;
+	this.y = y;
+	
+	this.prevPoints = [ [ x, y ] ];
+	this.color = color;
+	
+	this.alive = true;
+	
+	this.size = opts.fireworkShardBaseSize + opts.fireworkShardAddedSize * Math.random();
+}
+Shard.prototype.step = function(){
+	
+	this.x += this.vx;
+	this.y += this.vy += opts.gravity;
+	
+	if( this.prevPoints.length > opts.fireworkShardPrevPoints )
+		this.prevPoints.shift();
+	
+	this.prevPoints.push( [ this.x, this.y ] );
+	
+	var lineWidthProportion = this.size / this.prevPoints.length;
+	
+	for( var k = 0; k < this.prevPoints.length - 1; ++k ){
+		
+		var point = this.prevPoints[ k ],
+				point2 = this.prevPoints[ k + 1 ];
+		
+		ctx.strokeStyle = this.color.replace( 'alp', k / this.prevPoints.length );
+		ctx.lineWidth = k * lineWidthProportion;
+		ctx.beginPath();
+		ctx.moveTo( point[ 0 ], point[ 1 ] );
+		ctx.lineTo( point2[ 0 ], point2[ 1 ] );
+		ctx.stroke();
+		
+	}
+	
+	if( this.prevPoints[ 0 ][ 1 ] > hh )
+		this.alive = false;
+}
+function generateBalloonPath( x, y, size ){
+	
+	ctx.moveTo( x, y );
+	ctx.bezierCurveTo( x - size / 2, y - size / 2,
+									 	 x - size / 4, y - size,
+									   x,            y - size );
+	ctx.bezierCurveTo( x + size / 4, y - size,
+									   x + size / 2, y - size / 2,
+									   x,            y );
+}
+
+function anim(){
+	
+	window.requestAnimationFrame( anim );
+	
+	ctx.fillStyle = '#111';
+	ctx.fillRect( 0, 0, w, h );
+	
+	ctx.translate( hw, hh );
+	
+	var done = true;
+	for( var l = 0; l < letters.length; ++l ){
+		
+		letters[ l ].step();
+		if( letters[ l ].phase !== 'done' )
+			done = false;
+	}
+	
+	ctx.translate( -hw, -hh );
+	
+	if( done )
+		for( var l = 0; l < letters.length; ++l )
+			letters[ l ].reset();
+}
+
+for( var i = 0; i < opts.strings.length; ++i ){
+	for( var j = 0; j < opts.strings[ i ].length; ++j ){
+		letters.push( new Letter( opts.strings[ i ][ j ], 
+														j * opts.charSpacing + opts.charSpacing / 2 - opts.strings[ i ].length * opts.charSize / 2,
+														i * opts.lineHeight + opts.lineHeight / 2 - opts.strings.length * opts.lineHeight / 2 ) );
+	}
+}
+
+anim();
+
+window.addEventListener( 'resize', function(){
+	
+	w = c.width = window.innerWidth;
+	h = c.height = window.innerHeight;
+	
+	hw = w / 2;
+	hh = h / 2;
+	
+	ctx.font = opts.charSize + 'px Verdana';
+})
+    </script>
+
+
+</body></html>
